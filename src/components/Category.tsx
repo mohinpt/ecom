@@ -1,5 +1,6 @@
 import { ShoppingCart, Star } from "lucide-react";
 import Countdown from "./Countdown";
+import desktop from "../assets/desktop.jpg";
 
 
 import headphone from "../assets/headphone.jpg";
@@ -155,7 +156,7 @@ export const Category = () => {
                     <button className="btn btn-neutral rounded-full px-4 w-full md:w-[55%]">Shop Now <ShoppingCart /> </button>
                 </div>
                 <div>
-                    <img src="/src/assets/desktop.jpg" alt="" />
+                    <img src={desktop} alt="desktop" />
                 </div>
             </div>
 
