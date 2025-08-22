@@ -1,6 +1,15 @@
 import { ShoppingCart, Star } from "lucide-react";
 import Countdown from "./Countdown";
 
+
+import headphone from "../assets/headphone.jpg";
+import watch from "../assets/watch.jpg";
+import speaker from "../assets/speaker.jpg";
+import computer from "../assets/computer.jpg";
+import microphone from "../assets/microphone.jpg";
+import charger from "../assets/charger.png";
+
+
 export const Category = () => {
 
     const products = [
@@ -8,37 +17,37 @@ export const Category = () => {
             id: 1,
             name: "Wireless Headphones",
             itemsCount: 25,
-            image: "src/assets/headphone.jpg"
+            image: headphone
         },
         {
             id: 2,
             name: "Smartphone Case",
             itemsCount: 40,
-            image: "src/assets/watch.jpg"
+            image: watch
         },
         {
             id: 3,
             name: "Bluetooth Speaker",
             itemsCount: 18,
-            image: "src/assets/speaker.jpg"
+            image: speaker
         },
         {
             id: 4,
             name: "Gaming Mouse",
             itemsCount: 32,
-            image: "src/assets/computer.jpg"
+            image: computer
         },
         {
             id: 5,
             name: "Mechanical Keyboard",
             itemsCount: 15,
-            image: "src/assets/microphone.jpg"
+            image: microphone
         },
         {
             id: 6,
             name: "USB-C Charger",
             itemsCount: 50,
-            image: "src/assets/charger.png"
+            image: charger
         },
     ];
 
@@ -47,27 +56,28 @@ export const Category = () => {
             id: 7,
             name: "Smartwatch Band",
             itemsCount: 20,
-            image: "src/assets/charger.png"
+            image: charger
         },
         {
             id: 8,
             name: "Laptop Stand",
             itemsCount: 10,
-            image: "src/assets/watch.jpg"
+            image: watch
         },
         {
             id: 9,
             name: "LED Monitor",
             itemsCount: 7,
-            image: "src/assets/speaker.jpg"
+            image: speaker
         },
         {
             id: 10,
             name: "External Hard Drive",
             itemsCount: 12,
-            image: "src/assets/computer.jpg"
+            image: computer
         }
-    ]
+    ];
+
 
     return (
         <div className="py-10">
