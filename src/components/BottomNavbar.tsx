@@ -9,7 +9,7 @@ export const BottomNavbar = () => {
                     <ul className="menu menu-horizontal px-1">
                         <li>
                             <details >
-                                <summary className="hover:bg-transparent hover:text-blue-500 active:!bg-transparent active:!opacity-100 focus:!bg-opacity-100 focus:!bg-transparent">All Categaory</summary>
+                                <summary className="hover:!bg-transparent hover:text-blue-500 active:!bg-transparent active:!text-blue-500 focus:!bg-transparent">All Categaory</summary>
                                 <ul className="bg-tansparent rounded-t-none p-2">
                                     <li className="hover:text-blue-500 hover:scale-105 cursor-pointer">1. Rod</li>
                                     <li className="hover:text-blue-500 hover:scale-105 cursor-pointer">2. Cement</li>
@@ -56,7 +56,7 @@ export const BottomNavbar = () => {
                 <ul className="menu menu-horizontal px-1">
                     <li>
                         <details >
-                            <summary className="hover:bg-transparent hover:text-blue-500 active:!bg-transparent active:!opacity-100 focus:!bg-opacity-100 focus:!bg-transparent">English</summary>
+                            <summary className="hover:!bg-transparent hover:text-blue-500 active:!bg-transparent active:!text-blue-500 focus:!bg-transparent">English</summary>
                             <ul className="bg-tansparent rounded-t-none p-2">
                                 <li className="hover:text-blue-500 cursor-pointer">Bangla</li>
                                 <li className="hover:text-blue-500 cursor-pointer">Hindi</li>
@@ -66,7 +66,7 @@ export const BottomNavbar = () => {
                 </ul>
 
 
-                <div tabIndex={0} className="flex gap-2">
+                <div tabIndex={0} className="flex gap-2 cursor-pointer">
                     <p className="indicator">
                         <Heart />
                         <span className="badge badge-xs indicator-item bg-red-500 text-white">8</span>
@@ -76,7 +76,7 @@ export const BottomNavbar = () => {
                 </div>
 
 
-                <div tabIndex={0} className="flex gap-2">
+                <div tabIndex={0} className="flex gap-2 cursor-pointer">
                     <p className="indicator">
                         <ShoppingCart />
                         <span className="badge badge-xs indicator-item bg-red-500 text-white">8</span>

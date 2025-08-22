@@ -14,4 +14,14 @@
   .card-hover {
     @apply shadow-sm border border-white hover:border-[2px] hover:border-blue-500 hover:shadow-md hover:shadow-blue-500 transition-colors duration-200 ease-in-out;
   }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge, Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }

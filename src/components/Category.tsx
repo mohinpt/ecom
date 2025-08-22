@@ -1,3 +1,6 @@
+import { ShoppingCart, Star } from "lucide-react";
+import { useEffect, useState } from "react";
+import Countdown from "./Countdown";
 
 export const Category = () => {
 
@@ -74,10 +77,10 @@ export const Category = () => {
                 <a className="link hover:text-blue-500">Click me</a>
             </div>
             <h3 className="text-xs mt-2">Find your perfect gadge in just one click</h3>
-            <div className="grid grid-cols-6 gap-2 mt-10 px-4">
+            <div className="flex space-between gap-6 overflow-auto no-scrollbar">
                 {
                     products.map((item, id) => (
-                        <div key={id} className="card bg-base-100 w-50 h-60 card-hover">
+                        <div key={id} className="card bg-base-100 w-50 h-60 card-hover flex-shrink-0">
                             <figure>
                                 <img
                                     src={item.image}
@@ -93,31 +96,58 @@ export const Category = () => {
                     ))
                 }
             </div>
-
 
             <div className="flex justify-between mt-10">
                 <h1 className="text-xl font-semibold">New Arrivals</h1>
                 <a className="link hover:text-blue-500">Click me</a>
             </div>
             <h3 className="text-xs mt-2">Fresh pick -- just landed in our store</h3>
-            <div className="grid grid-cols-4 gap-2 mt-10 px-4">
+            <div className="flex space-between gap-6 overflow-auto no-scrollbar">
                 {
                     products2.map((item, id) => (
-                        <div key={id} className="card bg-base-100 w-70 h-80 card-hover">
+                        <div key={id} className="card bg-base-100 w-70 h-80 card-hover flex-shrink-0">
                             <figure>
                                 <img
                                     src={item.image}
                                     alt="Shoes"
                                     className="h-full" />
                             </figure>
-                            <div className="card-body !px-2">
-                                <h2 className="card-title">{item.name}</h2>
-                                <p>{item.itemsCount} items</p>
+                            <div className="card-body">
+                                <div className="flex justify-between items-center gap-2">
+                                    <h2 className="text-xl font-semibold">{item.name}</h2>
+                                    <span className="text-md flex gap-1 font-medium"> <Star size={20} className="text-yellow-300" /> 4.9</span>
+                                </div>
+                                <div className="flex justify-between items-center">
+                                    <div className="flex flex-col gap-2">
+                                        <div>
+                                            <span className="line-through text-gray-500 mr-1"> &#2547; 1299</span>
+                                            <span className="badge badge-xs bg-blue-200">12%</span>
+                                        </div>
+                                        <p className="font-bold text-2xl">&#x09F3; 1199</p>
+                                    </div>
+                                    <div className="bg-gray-300 rounded-full p-2 hover:bg-blue-500">
+                                        <ShoppingCart />
+                                    </div>
+
+                                </div>
+
                             </div>
                         </div>
-
                     ))
                 }
+            </div>
+
+            <div className="bg-yellow-300 rounded-md w-full my-10 p-6 grid grid-cols-2 gap-4">
+                <div className="flex flex-col gap-4 items-center">
+                    <h1 className="font-semibold text-2xl">SALE FEVER</h1>
+                    <p className="text-3xl">16% off Everything</p>
+                    <p>Offer ends in</p>
+                    <Countdown />
+                    <button className="btn btn-neutral rounded-full px-4 w-full md:w-[55%]">Shop Now <ShoppingCart /> </button>
+                </div>
+                <div>
+                    <img src="/src/assets/desktop.jpg" alt="" />
+                </div>
             </div>
 
         </div>

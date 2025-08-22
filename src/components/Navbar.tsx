@@ -2,7 +2,7 @@ import { ListFilter, Phone, Search, Square } from 'lucide-react'; // Named impor
 
 export const Navbar = () => {
     return (
-        <div className="navbar bg-base-100 shadow-sm justify-between  px-4 sm:px-6 md:px-10 lg:px-20">
+        <div className="navbar bg-base-100 shadow-sm justify-between  px-4 sm:px-6 md:px-10 lg:px-20 sticky top-0 z-10">
             <div className="flex justify-between items-center w-[50%] md:w-[40%]">
                 <Square />
                 <div className="flex gap-2 items-center justify-end">
