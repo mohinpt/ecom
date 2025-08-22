@@ -1,5 +1,4 @@
 import { ShoppingCart, Star } from "lucide-react";
-import { useEffect, useState } from "react";
 import Countdown from "./Countdown";
 
 export const Category = () => {
