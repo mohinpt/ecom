@@ -1,7 +1,6 @@
 
 import './App.css'
 import { BottomNavbar } from './components/BottomNavbar'
-import { Category } from './components/Category'
 import { Services } from './components/Services'
 import { Hero } from './components/Hero'
 import { Navbar } from './components/Navbar'
