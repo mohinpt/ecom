@@ -2,14 +2,12 @@ import { Heart, ShoppingCart } from "lucide-react"
 
 export const BottomNavbar = () => {
     return (
-        <div className="flex justify-between items-center py-4">
-            <div>
-                <div className="flex items-center gap-4">
-
+            <div className="hidden md:flex flex-col md:flex-row justify-between gap-2 md:gap-6 items-center py-4 z-10">
+                <div className="flex items-center gap-2 md:gap-4">
                     <ul className="menu menu-horizontal px-1">
                         <li>
                             <details >
-                                <summary className="hover:!bg-transparent hover:text-blue-500 active:!bg-transparent active:!text-blue-500 focus:!bg-transparent">All Categaory</summary>
+                                <summary className="hover:!bg-transparent hover:text-blue-500 active:!bg-transparent active:!text-blue-500 focus:!bg-transparent tex-sm md:text-md">All Categaory</summary>
                                 <ul className="bg-tansparent rounded-t-none p-2">
                                     <li className="hover:text-blue-500 hover:scale-105 cursor-pointer">1. Rod</li>
                                     <li className="hover:text-blue-500 hover:scale-105 cursor-pointer">2. Cement</li>
@@ -43,48 +41,48 @@ export const BottomNavbar = () => {
                         </li>
                     </ul>
 
-                    <p className="hover:text-blue-500 hover:scale-105 cursor-pointer">Home</p>
-                    <p className="hover:text-blue-500 hover:scale-105 cursor-pointer">Campaign</p>
-                    <p className="hover:text-blue-500 hover:scale-105 cursor-pointer">Trending</p>
-                    <p className="hover:text-blue-500 hover:scale-105 cursor-pointer">Brands</p>
-                    <p className="hover:text-blue-500 hover:scale-105 cursor-pointer">Outles</p>
+                    <p className="hover:text-blue-500 hover:scale-105 cursor-pointer tex-sm md:text-md">Home</p>
+                    <p className="hover:text-blue-500 hover:scale-105 cursor-pointer tex-sm md:text-md">Campaign</p>
+                    <p className="hover:text-blue-500 hover:scale-105 cursor-pointer tex-sm md:text-md">Trending</p>
+                    <p className="hover:text-blue-500 hover:scale-105 cursor-pointer tex-sm md:text-md">Brands</p>
+                    <p className="hover:text-blue-500 hover:scale-105 cursor-pointer tex-sm md:text-md">Outles</p>
+
+                </div>
+
+
+                <div className="flex items-center gap-4">
+                    <ul className="menu menu-horizontal px-1">
+                        <li>
+                            <details >
+                                <summary className="hover:!bg-transparent hover:text-blue-500 active:!bg-transparent active:!text-blue-500 focus:!bg-transparent">English</summary>
+                                <ul className="bg-tansparent rounded-t-none p-2">
+                                    <li className="hover:text-blue-500 cursor-pointer">Bangla</li>
+                                    <li className="hover:text-blue-500 cursor-pointer">Hindi</li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+
+
+                    <div tabIndex={0} className="flex gap-2 cursor-pointer">
+                        <p className="indicator">
+                            <Heart />
+                            <span className="badge badge-xs indicator-item bg-red-500 text-white">8</span>
+
+                        </p>
+                        <p>Wishlist</p>
+                    </div>
+
+
+                    <div tabIndex={0} className="flex gap-2 cursor-pointer">
+                        <p className="indicator">
+                            <ShoppingCart />
+                            <span className="badge badge-xs indicator-item bg-red-500 text-white">8</span>
+                        </p>
+                        <p>Cart</p>
+                    </div>
 
                 </div>
             </div>
-
-            <div className="flex items-center gap-4">
-                <ul className="menu menu-horizontal px-1">
-                    <li>
-                        <details >
-                            <summary className="hover:!bg-transparent hover:text-blue-500 active:!bg-transparent active:!text-blue-500 focus:!bg-transparent">English</summary>
-                            <ul className="bg-tansparent rounded-t-none p-2">
-                                <li className="hover:text-blue-500 cursor-pointer">Bangla</li>
-                                <li className="hover:text-blue-500 cursor-pointer">Hindi</li>
-                            </ul>
-                        </details>
-                    </li>
-                </ul>
-
-
-                <div tabIndex={0} className="flex gap-2 cursor-pointer">
-                    <p className="indicator">
-                        <Heart />
-                        <span className="badge badge-xs indicator-item bg-red-500 text-white">8</span>
-
-                    </p>
-                    <p>Wishlist</p>
-                </div>
-
-
-                <div tabIndex={0} className="flex gap-2 cursor-pointer">
-                    <p className="indicator">
-                        <ShoppingCart />
-                        <span className="badge badge-xs indicator-item bg-red-500 text-white">8</span>
-                    </p>
-                    <p>Cart</p>
-                </div>
-
-            </div>
-        </div>
     )
 }

@@ -4,7 +4,7 @@ import download from "../assets/download.jpg";
 import images2 from "../assets/images 2.jpg";
 export const Hero = () => {
     return (
-    <div className="grid grid-cols-7 grid-rows-5 gap-4 h-[80vh] p-2">
+    <div className="grid grid-cols-7 grid-rows-5 gap-4 h-[25vh] md:h-[50vh] lg:h-[80vh] p-2">
       <img
         src={hero}
         alt="hero"

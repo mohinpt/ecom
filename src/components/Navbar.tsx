@@ -6,7 +6,7 @@ export const Navbar = () => {
             <div className="flex justify-between items-center w-[50%] md:w-[40%]">
                 <Square />
                 <div className="flex gap-2 items-center justify-end">
-                    <div className="flex items-center gap-2 bg-blue-400/50 rounded-full border border-white py-1 px-2 text-white flex-shrink">
+                    <div className="flex items-center gap-2 bg-blue-400/50 rounded-full border border-white py-1 px-2 flex-shrink">
                         <Search size={15} />
                         <input className="outline-none w-full" type="text" name="" id="" placeholder="search..." />
                     </div>
